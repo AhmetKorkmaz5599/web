@@ -1,0 +1,21 @@
+UYARI!
+Bu callback SA-MP 0.3a'da eklendi ve önceki sürümlerde çalışmayacaktır!
+
+Açıklama
+
+Bu callback bir NPC'nin bir araca bindiğinde çağrılır.
+Ad           Açıklama
+vehicleid    NPC'nin bindiği aracın ID'si
+seatid       NPC'nin kullandığı koltuk ID'si
+
+public OnNPCEnterVehicle(vehicleid, seatid)
+{
+printf("OnNPCEnterVehicle ID: %d Koltuk: %d", vehicleid, seatid);
+return 1;
+}
+
+İlgilli Callbackler
+
+Aşağıdaki callbackler bir şekilde bu callback ile ilgili oldukları için yararlı olabilir.
+
+OnNPCExitVehicle: Bu callback bir NPC'nin araçtan çıktığında çağrılır.
