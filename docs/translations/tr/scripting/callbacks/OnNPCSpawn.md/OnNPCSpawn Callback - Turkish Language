@@ -1,0 +1,13 @@
+UYARI!
+Bu callback SA-MP 0.3a'de eklendi ve önceki sürümlerde çalışmayacaktır!
+
+Açıklama
+
+Bu geri çağırma (callback), bir NPC oluşturulduğunda çağrılır.
+
+public OnNPCSpawn()
+{
+    print("NPC oluşturuldu");
+    SendChat("Merhaba Dünya. Ben bir botum.");
+    return 1;
+}
